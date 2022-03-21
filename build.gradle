@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'guru.nidi:graphviz-java:0.18.1'
+    implementation 'com.github.javaparser:javaparser-core:3.24.0'
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+}
+
+
+test {
+    useJUnitPlatform()
+}
