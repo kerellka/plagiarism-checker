@@ -12,19 +12,11 @@ public class Calculator2 {
 
     public int summa(int left, int right) {
         lastRecordedResult = left + right;
-        if (lastRecordedResult == 0 && left == 0 && right == 0) {
-            System.out.println("Получили много 0!");
-        }
         return lastRecordedResult;
     }
 
     public int substraction(int left, int right) {
         lastRecordedResult = left - right;
-        int i = 0;
-        while (i < 10) {
-            System.out.println("print");
-            i++;
-        }
         return lastRecordedResult;
     }
 

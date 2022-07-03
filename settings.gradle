@@ -1,2 +1,3 @@
 rootProject.name = 'plagiarism-checker'
+include 'jacksonutils'
 

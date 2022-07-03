@@ -12,17 +12,11 @@ public class Calculator1 {
 
     public int sum(int a, int b) {
         lastResult = a + b;
-        if (lastResult == 0) {
-            System.out.println("Получили 0!");
-        }
         return lastResult;
     }
 
     public int sub(int a, int b) {
         lastResult = a - b;
-        for (int i = 0; i < 10; i++) {
-            System.out.println("print");
-        }
         return lastResult;
     }
 
