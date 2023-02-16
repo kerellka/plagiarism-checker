@@ -1,4 +1,4 @@
-package org.suai;
+package com.kerellka;
 
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;

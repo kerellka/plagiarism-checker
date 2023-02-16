@@ -1,11 +1,11 @@
-package org.suai;
+package com.kerellka;
 
 import com.github.javaparser.ast.CompilationUnit;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.suai.core.PlagiarismChecker;
-import org.suai.parser.utils.IOTreeUtils;
+import com.kerellka.core.PlagiarismChecker;
+import com.kerellka.utils.IOTreeUtils;
 
 import java.io.IOException;
 import java.util.stream.Stream;
@@ -99,7 +99,7 @@ public class ComparisonTests {
                         "/alg_comparison/performance/PlagiarismEqualsVisitor1.java",
                         "/alg_comparison/performance/PlagiarismEqualsVisitor2.java"
                 )
-        ).skip(8).limit(1);
+        );
     }
 
 

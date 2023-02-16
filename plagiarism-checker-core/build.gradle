@@ -1,0 +1,26 @@
+plugins {
+    id 'java-library'
+}
+
+group 'com.kerellka'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":jacksonutils")
+
+    implementation 'guru.nidi:graphviz-java:0.18.1'
+    api 'com.github.javaparser:javaparser-core:3.24.0'
+    api 'com.github.javaparser:javaparser-core-serialization:3.24.0'
+    implementation 'org.postgresql:postgresql:42.2.11'
+
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+}
+
+test {
+    useJUnitPlatform()
+}

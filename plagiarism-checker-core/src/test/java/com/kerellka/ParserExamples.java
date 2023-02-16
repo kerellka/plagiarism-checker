@@ -1,4 +1,4 @@
-package org.suai;
+package com.kerellka;
 
 import com.github.javaparser.printer.DotPrinter;
 import org.junit.jupiter.api.Test;

@@ -4,11 +4,11 @@ import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.Node;
 import com.github.javaparser.utils.Pair;
-import org.suai.core.PlagiarismChecker;
-import org.suai.persistence.ASTRepository;
-import org.suai.parser.utils.IOTreeUtils;
-import org.suai.persistence.JDBC;
-import org.suai.parser.utils.SourceCodeUtils;
+import com.kerellka.core.PlagiarismChecker;
+import com.kerellka.persistence.ASTRepository;
+import com.kerellka.utils.IOTreeUtils;
+import com.kerellka.persistence.JDBC;
+import com.kerellka.utils.SourceCodeUtils;
 import picocli.CommandLine;
 
 import java.nio.charset.StandardCharsets;
@@ -17,7 +17,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @CommandLine.Command(name = "PlagChecker")
-public class PlagiarismCheckerRunner {
+public class PlagiarismCheckerCLI {
 
     @CommandLine.Command(name = "insertProjectInDb")
     void insertProjectInDb(@CommandLine.Option(names = {"--database-url", "-dburl"}) String dbUrl,

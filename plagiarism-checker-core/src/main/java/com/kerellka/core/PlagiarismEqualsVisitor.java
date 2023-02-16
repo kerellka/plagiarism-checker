@@ -1,4 +1,4 @@
-package org.suai.core;
+package com.kerellka.core;
 
 import com.github.javaparser.ast.*;
 import com.github.javaparser.ast.body.*;
@@ -11,7 +11,7 @@ import com.github.javaparser.ast.stmt.*;
 import com.github.javaparser.ast.type.*;
 import com.github.javaparser.ast.visitor.GenericVisitor;
 import com.github.javaparser.ast.visitor.Visitable;
-import org.suai.parser.utils.PlagiarismStats;
+import com.kerellka.utils.PlagiarismStats;
 
 import java.util.*;
 

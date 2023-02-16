@@ -1,8 +1,6 @@
-package org.suai.core;
+package com.kerellka.core;
 
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.Node;
-import org.suai.core.PlagiarismEqualsVisitor;
 
 public class PlagiarismChecker {
 

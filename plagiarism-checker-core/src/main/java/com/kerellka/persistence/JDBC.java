@@ -1,4 +1,4 @@
-package org.suai.persistence;
+package com.kerellka.persistence;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

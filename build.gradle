@@ -8,25 +8,8 @@ repositories {
 }
 
 dependencies {
-    compile project(':jacksonutils')
-    compile 'guru.nidi:graphviz-java:0.18.1'
-    compile 'com.github.javaparser:javaparser-core:3.24.0'
-    compile 'com.github.javaparser:javaparser-core-serialization:3.24.0'
-    compile 'org.xerial:sqlite-jdbc:3.36.0.3'
-    compile 'info.picocli:picocli:4.6.3'
-
-    testImplementation(platform('org.junit:junit-bom:5.7.0'))
-    testImplementation('org.junit.jupiter:junit-jupiter')
-}
-
-
-jar {
-    manifest {
-        attributes("Main-Class": "org.suai.Main")
-    }
-    from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-    }
+    implementation project(':plagiarism-checker-core')
+    implementation 'info.picocli:picocli:4.6.3'
 }
 
 test {

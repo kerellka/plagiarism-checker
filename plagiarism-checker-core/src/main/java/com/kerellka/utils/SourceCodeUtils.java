@@ -1,12 +1,9 @@
-package org.suai.parser.utils;
+package com.kerellka.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.FileVisitOption;
-import java.nio.file.FileVisitor;
 import java.nio.file.Files;
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package org.suai;
+package com.kerellka;
 
 import org.junit.jupiter.api.Test;
 
